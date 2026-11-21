@@ -1,0 +1,19 @@
+{
+  "name": "codearena",
+  "version": "1.0.0",
+  "description": "DSA practice platform: 100 problems, Python & JavaScript judge, progress tracking",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "build-problems": "python problems/build.py",
+    "verify-problems": "python problems/build.py --verify-only",
+    "test": "node --test server/judge.test.js"
+  },
+  "engines": { "node": ">=22.13" },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
